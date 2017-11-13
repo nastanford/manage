@@ -9,6 +9,14 @@ router.get('/', function(req, res) {
 	});
 });
 
+/* Route - /  home */
+router.get('/home', function(req, res) {
+	res.render('index', {
+		pageTitle: 'Home',
+		pageID: 'home'
+	});
+});
+
 /* Route - About */
 router.get('/about', function(req, res) {
 	res.render('about', {
