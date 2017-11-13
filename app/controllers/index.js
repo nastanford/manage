@@ -17,6 +17,14 @@ router.get('/home', function(req, res) {
 	});
 });
 
+/* Route - /  orginal home */
+router.get('/ohome', function(req, res) {
+	res.render('home', {
+		pageTitle: 'Original Home',
+		pageID: 'ohome'
+	});
+});
+
 /* Route - About */
 router.get('/about', function(req, res) {
 	res.render('about', {
